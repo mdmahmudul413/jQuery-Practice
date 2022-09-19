@@ -1,0 +1,21 @@
+.moon * {
+    display: block;
+    color: gray;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+.moon {
+    display: block;
+    color: red;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}

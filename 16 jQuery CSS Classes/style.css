@@ -1,0 +1,36 @@
+/* for addClass() function */
+
+.lorem {
+    font-size: 50px;
+    color: red;
+}
+
+.moon {
+    letter-spacing: 10px;
+}
+
+
+/* for removeClass() function */
+
+.bdr {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.hi {
+    background: gray;
+}
+
+
+/* for toggleClass() function */
+
+.bdr1 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.hi1 {
+    background: gray;
+}

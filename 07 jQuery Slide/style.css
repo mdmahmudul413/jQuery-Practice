@@ -1,0 +1,38 @@
+.btn {
+    width: 500px;
+    height: 30px;
+    background: #333;
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/* for slideDown action */
+
+
+/* .lorem {
+    display: none;
+    width: 500px;
+    background: #000;
+    color: white;
+    text-align: center;
+    margin: auto;
+    height: 100px;
+} */
+
+
+/* for slideUp action and slideToggle action */
+
+.lorem {
+    width: 500px;
+    background: #000;
+    color: white;
+    text-align: center;
+    margin: auto;
+    height: 100px;
+}

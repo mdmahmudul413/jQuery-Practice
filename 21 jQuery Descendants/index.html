@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Descendants</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="moon">moon
+        <p>paragraph1</p>
+        <p>paragraph2
+            <span>span1
+                <span>span2</span>
+            </span>
+        </p>
+    </div>
+    <br><br>
+    <button class="btn1">click here for changing moon's children</button>
+    <br><br>
+    <button class="btn2">click here for changing moon's grand children with find() method</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

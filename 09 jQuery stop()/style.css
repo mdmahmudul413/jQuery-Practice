@@ -1,0 +1,25 @@
+.moon {
+    width: 500px;
+    height: 30px;
+    background: red;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.lorem {
+    display: none;
+    width: 500px;
+    height: 600px;
+    background: green;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+button {
+    font-size: 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Ancestors</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="ancestors">
+        Ancestors
+        <div>div
+            <ul>ul
+                <li>li
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="btn1">click here for changing span's parent li</button>
+    <br><br>
+    <button class="btn2">click here for changing all parents of span</button>
+    <br><br>
+    <button class="btn3">click here for changing span's grand parent ul</button>
+    <br><br>
+    <button class="btn4">click here for changing span's great grand parent div</button>
+    <br><br>
+    <button class="btn5">click here for changing span's parents until div</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

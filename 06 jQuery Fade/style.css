@@ -1,0 +1,58 @@
+button {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* fadeIn  */
+
+
+/* .box1 {
+    display: none;
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 10px auto;
+}
+
+.box2 {
+    display: none;
+    height: 100px;
+    width: 100px;
+    background: green;
+    margin: 10px auto;
+}
+
+.box3 {
+    display: none;
+    height: 100px;
+    width: 100px;
+    background: yellow;
+    margin: 10px auto;
+} */
+
+
+/* fadeOut, fadeToggle, fadeTo  */
+
+.box1 {
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 10px auto;
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background: green;
+    margin: 10px auto;
+}
+
+.box3 {
+    height: 100px;
+    width: 100px;
+    background: yellow;
+    margin: 10px auto;
+}
