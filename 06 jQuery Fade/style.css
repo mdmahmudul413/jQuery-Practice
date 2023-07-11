@@ -9,7 +9,7 @@ button {
 /* fadeIn  */
 
 
-/* .box1 {
+.box1 {
     display: none;
     height: 100px;
     width: 100px;
@@ -31,7 +31,7 @@ button {
     width: 100px;
     background: yellow;
     margin: 10px auto;
-} */
+}
 
 
 /* fadeOut, fadeToggle, fadeTo  */
