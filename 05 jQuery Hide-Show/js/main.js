@@ -46,10 +46,9 @@ $(document).ready(function() {
 
     // show action with click event using miliseconds parameter
         
-        $("#show").click(function() {
-            $("p").show(1000);
-        });
-
+        // $("#show").click(function() {
+        //     $("p").show(1000);
+        // });
 
     // toggle action with click event
         
@@ -59,10 +58,8 @@ $(document).ready(function() {
 
     // toggle action with click event and milisecond parameter
         
-        $("#toggle").click(function() {
-            $("p").toggle(1000);
-        });
-
-
+        // $("#toggle").click(function() {
+        //     $("p").toggle(1000);
+        // });
 
 });
