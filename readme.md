@@ -6,10 +6,20 @@
 
         $("h1").hide();
 
-## Heading level 2
+## 02 jQuery Syntext
 
-    1. show/hide html Elements
+    $(document).ready(function() {
 
-        $("h1").show();
+        // select by html tag 
 
         $("h1").hide();
+
+        // select by class
+
+        $(".me").hide();
+
+        // select by id 
+
+        $("#me").hide();
+        
+    });
