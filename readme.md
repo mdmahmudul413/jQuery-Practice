@@ -757,6 +757,69 @@
             });
     });
 
+## 15 jQuery Remove contents(remove, empty)
+
+    $(document).ready(function() {
+        // remove() action: to remove a section/div
+
+            $("button").click(function() {
+                $("#moon").remove();
+            });
+
+        // empty() action: to remove all the contents inside a section/div
+
+            $("button").click(function() {
+                $("#moon").empty();
+            });
+
+    });
+
+## 16 jQuery CSS Classes(add, remove, toggle)
+
+    $(document).ready(function() {
+        // addClass() function
+            
+            $(".btn1").click(function() {
+                $("p").addClass("lorem moon");
+            });
+
+
+        // removeClass() function 
+            
+            $(".btn2").click(function() {
+                $("#div1").removeClass("hi");
+            });
+
+        // toggleClass() function 
+            
+            $(".btn3").click(function() {
+                $("#div2").toggleClass("hi1");
+            });
+
+    });
+
+## 17 jQuery css() function
+
+    $(document).ready(function() {
+        // single CSS property
+            
+            $("button").click(function() {
+                $("p").css("background-color", "red");
+            });
+
+
+        // multiple CSS property
+            
+            $("button").click(function() {
+                $("p").css({
+                    "background-color": "red",
+                    "padding": "20px",
+                    "color": "white",
+                    "font-size": "30px"
+                });
+            });
+    });
+
 ## 20 jQuery Ancestors
 
     $(document).ready(function() {
