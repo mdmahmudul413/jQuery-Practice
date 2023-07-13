@@ -611,3 +611,170 @@
             });
 
     });
+
+## 09 jQuery stop()
+
+    $(document).ready(function() {
+    
+        $(".moon").click(function() {
+            $(".lorem").slideDown(2000);
+        });
+
+        $("button").click(function() {
+            $(".lorem").stop();
+        });
+
+
+    });
+
+
+## 10 jQuery Callback
+
+    $(document).ready(function() {
+
+        // callback function as a parameter
+
+            $("button").click(function() {
+                $("p").hide("slow", function() {
+                    alert("Hi");
+                });
+            });
+
+
+        // callback function is not a parameter
+
+            $("button").click(function() {
+                $("p").hide("slow");
+                alert("Hi");
+
+            });
+
+        // There is a huge diference between use callback function as a parameter and without using callback function as a parameter
+
+    });
+
+## 11 jQuery Chaining
+
+    $(document).ready(function() {
+
+        $('button').click(function() {
+            $("p").css("background", "green")
+                .slideUp(1000)
+                .slideDown(1000)
+                .hide(1000);
+        });
+
+    });
+
+## 12 jQuery Get Contents
+
+    $(document).ready(function() {
+
+        // get contents 
+        // text()
+            
+            $("#btn1").click(function() {
+                alert("Text: " + $("#lorem").text());
+            });
+
+        // html()
+            
+            $("#btn2").click(function() {
+                alert("HTML: " + $("#lorem").html());
+            });
+
+        // val()
+            
+            $("#btn3").click(function() {
+                alert($("#moon").val());
+            });
+
+        // get attribute
+        // attr(): to see attribute
+            
+            $("#btn4").click(function() {
+                alert($("#link").attr("href"));
+            });
+
+    });
+    
+## 13 jQuery Set Contents
+
+    $(document).ready(function() {
+        // set content
+        // text()
+
+            $("#btn1").click(function() {
+                $("#lorem1").text("Hi");
+            });
+
+        // html()
+
+            $("#btn2").click(function() {
+                $("#lorem2").html("<h1>Assalamualaikum</h1>");
+            });
+
+        // val()
+
+            $("#btn3").click(function() {
+                $("#lorem3").val("Enter Your Name Please");
+            });
+
+        // set attribute
+        // attr()
+
+            $("#btn4").click(function() {
+                $("#lorem4").attr("href", "http://www.youtube.com");
+            });
+
+    });
+
+## 20 jQuery Ancestors
+
+    $(document).ready(function() {
+    // parent(): to make change to the emmediate parent
+        
+        $(".btn1").click(function() {
+            $("span").parent().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+    // parents(): to make change to all the parents
+        
+        $(".btn2").click(function() {
+            $("span").parents().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+    // parents("ul"): to select a specific  parent
+        
+        $(".btn3").click(function() {
+            $("span").parents("ul").css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+    // parents("div"): to select a specific parent
+        
+        $(".btn4").click(function() {
+            $("span").parents("div").css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+    // parentsUntil("div"): selecting parents untill a specific parent
+        
+        $(".btn5").click(function() {
+            $("span").parentsUntil("div").css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+        });
+
+});

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $(".moon").click(function() {
         $(".lorem").slideDown(2000);
     });
