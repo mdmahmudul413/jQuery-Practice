@@ -820,7 +820,27 @@
             });
     });
 
-## 20 jQuery Ancestors
+## 18 jQuery Dimensions(height(), width())
+
+    $(document).ready(function() {
+
+        $("button").click(function() {
+            $("div").height(500).width(500);
+        });
+
+    });
+
+## 19 jQuery Traversing(Theory)
+
+    jQuery Traversing
+
+        1. Ancestor:Parent, Grand Parent, Great Grand Parent
+
+        2. Descendent:Child, Grand Child, Great Grand Child
+
+        3. Siblings: Brothers & Sisters
+
+## 20 jQuery Ancestors(parent(), parents(), parentsUntil())
 
     $(document).ready(function() {
     // parent(): to make change to the emmediate parent
@@ -869,3 +889,166 @@
         });
 
 });
+## 21 jQuery Descendants(children())
+
+    $(document).ready(function() {
+        // children(): to make changes to a childrens
+
+            $(".btn1").click(function() {
+                $(".moon").children().css({
+                    "color": "red",
+                    "border": "2px solid red"
+                });
+            });
+
+        // find(): to find childrens/grand childrens/great grand childrens
+
+            $(".btn2").click(function() {
+                $(".moon").find("span").css({
+                    "color": "red",
+                    "border": "2px solid red"
+                });
+            });
+    });
+
+## 22 jQuery Siblings
+
+    $(document).ready(function() {
+
+        // siblings() : change all the siblings of h2
+            
+            $(".btn1").click(function() {
+
+                $("h2").siblings().css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+
+        // siblings("p") : change only the p siblings of h2
+            
+            $(".btn2").click(function() {
+
+                $("h2").siblings("p").css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+
+        // siblings("span") : change only the span siblings of h2
+            
+            $(".btn3").click(function() {
+
+                $("h2").siblings("span").css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+
+
+        // next() : change only the next siblings
+            
+            $(".btn4").click(function() {
+
+                $("h2").next().css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+
+        // nextAll() : change all the next siblings
+            
+            $(".btn5").click(function() {
+
+                $("h2").nextAll().css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+        // nextUntil() : change the next siblings untill specific sibling
+            
+            $(".btn6").click(function() {
+
+                $("h2").nextUntil("a").css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+
+        // prev() : change only the prev sibling
+            
+            $(".btn7").click(function() {
+
+                $("h2").prev().css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+
+        // prevAll() : change all the prev siblings
+            
+            $(".btn8").click(function() {
+
+                $("h2").prevAll().css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+        // prevUntil() : change the prev siblings untill specific sibling
+            
+            $(".btn9").click(function() {
+
+                $("h2").prevUntil("a").css({
+                    "color": "red",
+                    "border": "2px solid red",
+                    "background": "rgb(228, 228, 228)"
+                });
+
+            });
+    });
+
+## 23 jQuery Filtering
+
+    $(document).ready(function() {
+
+        // first( ):to select the first item
+            
+            $("div").first().css("background", "yellow");
+
+
+        // last( ): to select the last item
+            
+            $("div").last().css("background", "yellow");
+
+
+        // eq( ) is used to change property using index number
+            
+            $(".hi p").eq(2).css("background", "yellow");
+
+
+        // filter( ) is used to change property through filtering class
+            
+            $("p").filter(".intro").css("background", "yellow");
+
+        // not( ) is used to change property through filtering the specific class. alternative to filter()
+            
+            $(".hi p").not(".intro").css("background", "yellow");
+
+
+    });
