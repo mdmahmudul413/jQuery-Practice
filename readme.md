@@ -24,7 +24,7 @@
         
     });
 
-## 03 jQuery Selector
+## 03 jQuery Selectors
 
     $(document).ready(function() {
 
@@ -227,7 +227,7 @@
 
     });
 
-## 05 jQuery Hide-Show
+## 05 jQuery Hide-Show functions
 
     $(document).ready(function() {
 
@@ -295,7 +295,7 @@
 
     });
 
-## 06 jQuery Fade
+## 06 jQuery Fade functionality
 
     ================================
     ======== CSS for fadeIn ======== 
@@ -411,7 +411,7 @@
 
     });
 
-## 07 jQuery Slide
+## 07 jQuery Slide functionality
 
     ================================
     ======== CSS for fadeIn ======== 
@@ -506,7 +506,7 @@
 
     });
 
-## 08 jQuery Animate
+## 08 jQuery Animate() function
 
     $(document).ready(function() {
 
@@ -612,7 +612,7 @@
 
     });
 
-## 09 jQuery stop()
+## 09 jQuery stop() function
 
     $(document).ready(function() {
     
@@ -653,7 +653,7 @@
 
     });
 
-## 11 jQuery Chaining
+## 11 jQuery Chaining(Multiple action in a event)
 
     $(document).ready(function() {
 
@@ -727,6 +727,34 @@
                 $("#lorem4").attr("href", "http://www.youtube.com");
             });
 
+    });
+## 14 jQuery Add contents(append, prepend, before, after)
+
+    $(document).ready(function() {
+        // append(): add text after finishing
+
+            $("button").click(function() {
+                $("p").append("<b> Mahmudul</b>");
+            });
+
+
+        // prepend(): add text at starting
+
+            $("button").click(function() {
+                $("p").prepend("<b> Mahmudul</b>");
+            });
+
+        // before(): add text at starting
+
+            $("button").click(function() {
+                $("img").before("<b> Mahmudul</b>");
+            });
+
+        // after(): add text after finishing
+
+            $("button").click(function() {
+                $("img").after("<b> Mahmudul</b>");
+            });
     });
 
 ## 20 jQuery Ancestors
