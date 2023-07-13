@@ -1063,3 +1063,18 @@
             });
 
     });
+
+    jQuery Ajax http request sending Structure 
+
+        $.ajax({
+           type: 'GET',
+           url: "",
+           data: {},
+           dataType: "JSON",
+           success: function (response) {
+                console.log(response);
+           },
+           error: function (response) {
+                console.log(response);
+           }
+        });
